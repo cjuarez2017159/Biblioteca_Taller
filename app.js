@@ -1,7 +1,10 @@
 import { config } from "dotenv";
 config();
-import Sever from './configs/server.js';
+import Server from "./configs/server.js";
 
+const PORT = process.env.PORT
 const server = new Server();
 
-server.listen();
+server.listen(PORT, () => {
+    console.log(`Servidor levantado en ${PORT}`)
+});

@@ -8,7 +8,7 @@ import { dbConnection } from './connection.js';
 import userRoutes from '../src/user/user.routes.js';
 import authRoutes from '../src/auth/auth.routes.js';
 
-class Sercer{
+class Server{
     constructor(){
         this.app = express();
         this.port = process.env.PORT;

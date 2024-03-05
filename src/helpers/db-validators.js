@@ -1,6 +1,6 @@
 import bookModel from '../book/book.model.js';
 import Role from '../roles/role.model.js';
-import User from '../users/user.model.js';
+import User from '../user/user.model.js';
 import Book from '../book/book.model.js';
 
 export const esRoleValido = async (role = '') => {
